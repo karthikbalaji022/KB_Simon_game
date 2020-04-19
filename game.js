@@ -7,7 +7,7 @@ var level = -1;
 var check=0;
 
 
-$(document).keydown(function() {
+$(".play").click(function() {
 
   if(level===-1){
   sequence();
@@ -18,7 +18,7 @@ $(document).keydown(function() {
 
 
 
-$(".btn").click(function() {
+$(".simon").click(function() {
     var userChoice = $(this).attr("id");
     $("#" + userChoice).addClass("pressed");
     setTimeout(function() {
@@ -77,7 +77,7 @@ function fail(){
   game=[];
   check=0;
   userValue=[];
-$("h1").text("Well played,press any key for restart");
+$("h1").text("Well played,press play!! button for restart");
 
 
 }
